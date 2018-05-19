@@ -1,21 +1,11 @@
 # Echo
 
-**TODO: Add description**
+Dummy project to test cross-compilation with Docker.
+Basically uses Docker to create a distillery release, then zip and copy
+the resulting build artifact to various Linux VPS to be tested.
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `echo` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:echo, "~> 0.1.0"}
-  ]
-end
 ```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/echo](https://hexdocs.pm/echo).
-
+make build_docker
+make compile
+make zip
+```
